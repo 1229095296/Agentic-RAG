@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stateflow-musique"
+version = "0.1.0"
+description = "StateFlow-GRPO core implementation for MuSiQue agentic retrieval"
+requires-python = ">=3.10"
+dependencies = [
+  "aiohttp>=3.9",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["slime_integration*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
