@@ -1,0 +1,26 @@
+# Local environments and downloads
+.venv/
+venv/
+.download-env/
+offline_packages/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+# User knowledge, training artefacts and databases
+data/
+state_pool/
+traces/
+checkpoints/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.db
+*.db-*
+*.log
+# Secrets: keep only explicit examples
+.env
+.env.*
+!.env.example
+*.pem
+*.key

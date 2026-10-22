@@ -1,0 +1,7 @@
+.venv/
+.download-env/
+offline_packages/
+data/
+__pycache__/
+.pytest_cache/
+.env
